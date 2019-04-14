@@ -8,20 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		E33365B42262CC1400EB10F6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E33365B32262CC1400EB10F6 /* AppDelegate.swift */; };
-		E33365B62262CC1400EB10F6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E33365B52262CC1400EB10F6 /* ViewController.swift */; };
-		E33365B92262CC1400EB10F6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E33365B72262CC1400EB10F6 /* Main.storyboard */; };
 		E33365BB2262CC1600EB10F6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E33365BA2262CC1600EB10F6 /* Assets.xcassets */; };
 		E33365BE2262CC1600EB10F6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E33365BC2262CC1600EB10F6 /* LaunchScreen.storyboard */; };
+		E33365C82262CFB500EB10F6 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E33365C62262CFB500EB10F6 /* MainVC.swift */; };
+		E33365C92262CFB500EB10F6 /* MainVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = E33365C72262CFB500EB10F6 /* MainVC.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		E33365B02262CC1400EB10F6 /* TestOne.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestOne.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E33365B32262CC1400EB10F6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E33365B52262CC1400EB10F6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		E33365B82262CC1400EB10F6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E33365BA2262CC1600EB10F6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E33365BD2262CC1600EB10F6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E33365BF2262CC1600EB10F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E33365C62262CFB500EB10F6 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
+		E33365C72262CFB500EB10F6 /* MainVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainVC.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +54,22 @@
 		E33365B22262CC1400EB10F6 /* TestOne */ = {
 			isa = PBXGroup;
 			children = (
+				E33365C52262CF5900EB10F6 /* UI */,
 				E33365B32262CC1400EB10F6 /* AppDelegate.swift */,
-				E33365B52262CC1400EB10F6 /* ViewController.swift */,
-				E33365B72262CC1400EB10F6 /* Main.storyboard */,
 				E33365BA2262CC1600EB10F6 /* Assets.xcassets */,
 				E33365BC2262CC1600EB10F6 /* LaunchScreen.storyboard */,
 				E33365BF2262CC1600EB10F6 /* Info.plist */,
 			);
 			path = TestOne;
+			sourceTree = "<group>";
+		};
+		E33365C52262CF5900EB10F6 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				E33365C62262CFB500EB10F6 /* MainVC.swift */,
+				E33365C72262CFB500EB10F6 /* MainVC.xib */,
+			);
+			path = UI;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -123,8 +131,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				E33365BE2262CC1600EB10F6 /* LaunchScreen.storyboard in Resources */,
+				E33365C92262CFB500EB10F6 /* MainVC.xib in Resources */,
 				E33365BB2262CC1600EB10F6 /* Assets.xcassets in Resources */,
-				E33365B92262CC1400EB10F6 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,7 +143,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E33365B62262CC1400EB10F6 /* ViewController.swift in Sources */,
+				E33365C82262CFB500EB10F6 /* MainVC.swift in Sources */,
 				E33365B42262CC1400EB10F6 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -143,14 +151,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		E33365B72262CC1400EB10F6 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				E33365B82262CC1400EB10F6 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		E33365BC2262CC1600EB10F6 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -285,6 +285,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3752X8F5DY;
 				INFOPLIST_FILE = TestOne/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -292,7 +293,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = cn.metroman.TestOne;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -303,6 +304,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3752X8F5DY;
 				INFOPLIST_FILE = TestOne/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -310,7 +312,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = cn.metroman.TestOne;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
