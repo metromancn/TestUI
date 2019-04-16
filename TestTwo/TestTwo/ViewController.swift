@@ -2,19 +2,27 @@ import UIKit
 import FloatingPanel
 
 class ViewController: UIViewController {
-    var floatingPanelController: FloatingPanelController!
+    var fpc: FloatingPanelController!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        floatingPanelController = FloatingPanelController()
-        let semiModalViewController = SemiModalViewController()
-        floatingPanelController.set(contentViewController: semiModalViewController)
-        floatingPanelController.addPanel(toParent: self, belowView: nil, animated: false)
+        
+//        fpc = FloatingPanelController()
+//        let semiModalViewController = SemiModalViewController()
+//        fpc.set(contentViewController: semiModalViewController)
+//        fpc.addPanel(toParent: self, belowView: nil, animated: false)
+        
+        fpc = FloatingPanelController()
+        //fpc.delegate = self
+        let contentVC = ContentOneVC()
+        fpc.set(contentViewController: contentVC)
+        fpc.track(scrollView: contentVC.tableView)
+        fpc.addPanel(toParent: self)
     }
     
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
-        floatingPanelController.removePanelFromParent(animated: true)
+        fpc.removePanelFromParent(animated: true)
     }
 }
 

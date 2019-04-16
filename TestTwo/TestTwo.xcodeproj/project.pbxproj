@@ -13,6 +13,8 @@
 		E318C0FF2265E34E00123D81 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E318C0FD2265E34E00123D81 /* Main.storyboard */; };
 		E318C1012265E34F00123D81 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E318C1002265E34F00123D81 /* Assets.xcassets */; };
 		E318C1042265E34F00123D81 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E318C1022265E34F00123D81 /* LaunchScreen.storyboard */; };
+		E393B9762265E95F0001D5D4 /* ContentOneVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E393B9742265E95F0001D5D4 /* ContentOneVC.swift */; };
+		E393B9772265E95F0001D5D4 /* ContentOneVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = E393B9752265E95F0001D5D4 /* ContentOneVC.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		E318C1002265E34F00123D81 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E318C1032265E34F00123D81 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E318C1052265E34F00123D81 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E393B9742265E95F0001D5D4 /* ContentOneVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentOneVC.swift; sourceTree = "<group>"; };
+		E393B9752265E95F0001D5D4 /* ContentOneVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ContentOneVC.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +88,8 @@
 				E318C1002265E34F00123D81 /* Assets.xcassets */,
 				E318C1022265E34F00123D81 /* LaunchScreen.storyboard */,
 				E318C1052265E34F00123D81 /* Info.plist */,
+				E393B9742265E95F0001D5D4 /* ContentOneVC.swift */,
+				E393B9752265E95F0001D5D4 /* ContentOneVC.xib */,
 			);
 			path = TestTwo;
 			sourceTree = "<group>";
@@ -151,6 +157,7 @@
 				E318C1042265E34F00123D81 /* LaunchScreen.storyboard in Resources */,
 				E318C1012265E34F00123D81 /* Assets.xcassets in Resources */,
 				E318C0FF2265E34E00123D81 /* Main.storyboard in Resources */,
+				E393B9772265E95F0001D5D4 /* ContentOneVC.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -201,6 +208,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E318C0FC2265E34E00123D81 /* ViewController.swift in Sources */,
+				E393B9762265E95F0001D5D4 /* ContentOneVC.swift in Sources */,
 				E318C0FA2265E34E00123D81 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -351,7 +359,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3752X8F5DY;
 				INFOPLIST_FILE = TestTwo/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = cn.metroman.TestTwo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -367,7 +378,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3752X8F5DY;
 				INFOPLIST_FILE = TestTwo/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = cn.metroman.TestTwo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
